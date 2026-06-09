@@ -1,0 +1,148 @@
+<!DOCTYPE html >
+<html >
+<!-- Un exemple de commentaires : mettre tous les logos dans le même dossier-->
+<!-- en-tête de l’onglet-->
+
+<head>
+	<meta name = "author" content = "sbreneliere"/>
+	<link rel="icon" href="image/logo_site.avif"/>
+	<title> Portfolio </title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+</head>
+
+<body>
+    
+	<nav class="style_nav">
+		<h2 class="titre_nav">
+			Brenelière Samantha
+		</h2>
+		<ul>
+			<li><a href="presentation.html#presentation" class="nav-link active" > Présentation </a></li>
+			<li><a href="presentation.html#experiences" class="nav-link">Expériences</a></li>
+			<li><a href="presentation.html#diplomes" class="nav-link">Diplômes</a></li>
+			<li><a href="presentation.html#competences" class="nav-link">Compétences</a></li>
+			<li><a href="presentation.html#contact" class="nav-link">Contact</a></li>
+			<li><a href="projets_etudes.html" class="nav-link"> Projets d'études </a></li>
+			<!--si on met rien dans href renvoie à la page actuelle (réactualise)-->
+			<!--href="#" pour ne pas réactualiser -->
+		</ul>
+	</nav>
+
+	<main>
+		
+		<section id="presentation">
+			<!--partie visible sur tout l'écran quand on clique sur le site-->
+			<div class="split container">
+				<video autoplay muted loop class="bg-video">
+					<source src="image/videoplayback.mp4" type="video/mp4">
+				</video>
+				<div class="im_text">
+					<div class="titre">
+						Brenelière Samantha
+					</div>
+					<div class="texte_pres" id="machine">
+						Je suis élève ingénieure, en informatique
+					</div>
+				</div>
+				<div class="im_pres">
+					<img src="image/pp.jpg" alt="Photo de présentation" class="taille_im">
+				</div>
+			</div>
+		</section>
+
+		<section id="experiences">
+			<div class="container fond">
+				<div class="texte-important2">
+					Stages / Expériences
+				</div>
+				<div class="chrono-timeline-wrapper">
+					<div class="chrono-timeline-line"></div>
+
+					<div class="chrono-timeline-event">
+						<div class="chrono-timeline-card chrono-timeline-card-top">
+							<h3>Conseillère à la vente - Easy cash - Quévert, France</h3>
+							<p class="date">Juin 2024</p>
+							<div class="chrono-timeline-details">
+								<p>Sens du contact et de l’écoute active ;</p>
+								<p>Collaboration / travail avec l’équipe ;</p>	
+								<p>Reformatage des ordinateurs avant la remise en vente.</p>
+							</div>
+						</div>
+						<div class="chrono-timeline-dot"></div>
+					</div>
+
+					<div class="chrono-timeline-event">
+						<div class="chrono-timeline-dot"></div>
+						<div class="chrono-timeline-card chrono-timeline-card-bottom">
+							<h3>Gérante de snack - Beauséjour - Saint Samson/Rance, France</h3>
+							<p class="date">Juillet - Aout 2025</p>
+						</div>
+					</div>
+
+					<div class="chrono-timeline-event">
+						<div class="chrono-timeline-card chrono-timeline-card-top">
+							<h3>Stage en réseau et télécommunication - SNCF Réseau - Rennes, France</h3>
+							<p class="date">Juin 2026</p>
+						</div>
+						<div class="chrono-timeline-dot"></div>
+					</div>
+
+					<div class="chrono-timeline-event">
+						<div class="chrono-timeline-dot"></div>
+						<div class="chrono-timeline-card chrono-timeline-card-bottom">
+							<h3>Gérante de snack - Beauséjour - Saint Samson/Rance, France</h3>
+							<p class="date">Juillet - Aout 2026</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="diplomes">
+			<div class="container fond2">
+				<div class="texte-important2">
+					Cursus / diplômes :
+				</div>
+				<ul class="liste">
+					<li class="texte2">ahhhhhhh</li>
+					<li class="texte2">hihiiii</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="competences">
+			<div class="container fond3">
+				<div class="texte_pres">
+					Globalement faire un jolie truc avec tout les langages
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="container fond4">
+				<div class="texte_pres">
+					Mettre un questionnaire de contact
+				</div>
+			</div>
+		</section>
+		
+    </main>
+
+    <footer>
+		<div class="footer-left">
+			<h3>Samantha Brenelière</h3>
+			<p>Étudiante en informatique</p>
+		</div>
+
+		<div class="footer-center">
+			<p>✉ samantha2004@orange.fr</p>
+		</div>
+
+		<div class="footer-right">
+			<p>© 2026</p>
+		</div>
+	</footer>
+
+	<script src="JavaScript/script.js"></script>
+</body >
+</html>
