@@ -13,20 +13,24 @@
 
 <!-- texte dans la page -->
 <body>
-
-	<header>
-		<h1 class="nom_page"> Portfolio </h1>
-	</header>
-    
-	<nav>
+	<nav class="style_nav">
+		<h2 class="titre_nav">
+			Brenelière Samantha
+		</h2>
 		<ul>
-			<li><a href="../presentation.html"> Présentation </a></li>
-			<li><a href="../projets_etudes.html"> Projets d'études </a></li>
-            <li><a href="pokedex.html" class="active"> Pokédex </a></li>
+			<li><a href="../presentation.html#presentation" class="nav-link" > Présentation </a></li>
+			<li><a href="../presentation.html#experiences" class="nav-link">Expériences</a></li>
+			<li><a href="../presentation.html#diplomes" class="nav-link">Diplômes</a></li>
+			<li><a href="../presentation.html#competences" class="nav-link">Compétences</a></li>
+			<li><a href="../presentation.html#contact" class="nav-link">Contact</a></li>
+			<li><a href="../projets_etudes.html" class="nav-link"> Projets d'études </a></li>
+			<li><a href="pokedex.html" class="active"> Pokédex </a></li>
+			<!--si on met rien dans href renvoie à la page actuelle (réactualise)-->
+			<!--href="#" pour ne pas réactualiser -->
 		</ul>
 	</nav>
 
-	<main>
+	<main class="main-container">
 
 		<div class="titre">
             Pokédex
