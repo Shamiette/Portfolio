@@ -62,8 +62,11 @@ html {
   font-size: 0.8vw;
 }
 
-.texte-important2 {
+.container_top {
   margin-top: 8vh ;
+}
+
+.texte-important2 {
   font-family: monospace ;
   color: rgb(255, 255, 255);
   font-size: 1.5vw;
