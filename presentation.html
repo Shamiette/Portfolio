@@ -2,6 +2,7 @@
 <html >
 <!-- Un exemple de commentaires : mettre tous les logos dans le même dossier-->
 <!-- en-tête de l’onglet-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
 	<meta name = "author" content = "sbreneliere"/>
@@ -125,11 +126,48 @@
 					<div class="texte-important2">
 						Cursus / diplômes :
 					</div>
-					<ul class="liste">
-						<li class="texte2"> Brevet mention très bien 2018-2019 </li>
-						<li class="texte2"> Bac spécialité mathématiques et physiques mention assez bien 2021-2022 </li>
-						<li class="texte2"> 1er année de licence de mathématiques 2022-2023 </li>
-						<li class="texte2"> Cycle universitaire préparatoire aux grandes écoles à l'ESIR 2023-2025 </li>
+					<ul class="diploma-list">
+						<li class="diploma-card">
+							<h3>Brevet</h3>
+							<p class="date">2018 - 2019</p>
+							<div class="diploma-details">
+								<p>Mention : Très bien</p>
+								<p>Lieu : Collège Val de Rance à Plouer sur Rance </p>
+							</div>
+						</li>
+
+						<li class="diploma-card">
+							<h3>Bac spécialité mathématiques et physiques</h3>
+							<p class="date">2021 - 2022</p>
+							<div class="diploma-details">
+								<p>Mention : Assez bien</p>
+								<p>Lieu : Lycée la Fontaine des eaux à Dinan</p>
+							</div>
+						</li>
+
+						<li class="diploma-card">
+							<h3>Permis B</h3>
+							<p class="date">Avril 2022</p>
+							<div class="diploma-details">
+								<p>Lieu : Dinan</p>
+							</div>
+						</li>
+
+						<li class="diploma-card">
+							<h3>1ère année de licence de mathématiques</h3>
+							<p class="date">2022 - 2023</p>
+							<div class="diploma-details">
+								<p>Lieu : Université de Rennes 1</p>
+							</div>
+						</li>
+
+						<li class="diploma-card">
+							<h3>Cycle universitaire préparatoire aux grandes écoles</h3>
+							<p class="date">2023 - 2025</p>
+							<div class="diploma-details">
+								<p>Lieu : ESIR à l'université de Rennes</p>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -139,24 +177,37 @@
 			<div class="container fond3">
 				<div class="container_top">
 					<div class="texte-important2">
-						Langages de programmations maîtrisés
+						Langages & outils
 					</div>
-					<div>
-						<li class="texte2"> HTML </li>
-						<li class="texte2"> CSS </li>
-						<li class="texte2"> Php </li>
-						<li class="texte2"> SQL </li>
-						<li class="texte2"> Python </li>
-						<li class="texte2"> Java </li>
-						<li class="texte2"> C++ </li>
-					</div>
-					<div class="texte-important2">
-						Langages de programmations abordés
-					</div>
-					<div>
-						<li class="texte2"> Bash </li>
-						<li class="texte2"> Assembleur </li>
-						<li class="texte2"> 3D Expérience </li>
+
+					<div class="skills-terminal">
+						<div class="skills-terminal-header">
+							<span class="skills-dot skills-dot-red"></span>
+							<span class="skills-dot skills-dot-yellow"></span>
+							<span class="skills-dot skills-dot-green"></span>
+							<span class="skills-terminal-title">competences.sh</span>
+						</div>
+						<div class="skills-terminal-body">
+							<p class="skills-cmd">cat maitrise.txt</p>
+							<div class="skills-grid">
+								<span class="skill-chip skill-mastered">HTML</span>
+								<span class="skill-chip skill-mastered">CSS</span>
+								<span class="skill-chip skill-mastered">PHP</span>
+								<span class="skill-chip skill-mastered">SQL</span>
+								<span class="skill-chip skill-mastered">Python</span>
+								<span class="skill-chip skill-mastered">Java</span>
+								<span class="skill-chip skill-mastered">C++</span>
+							</div>
+
+							<p class="skills-cmd">cat en_apprentissage.txt</p>
+							<div class="skills-grid">
+								<span class="skill-chip skill-learning">Bash</span>
+								<span class="skill-chip skill-learning">Assembleur</span>
+								<span class="skill-chip skill-learning">3D Expérience</span>
+							</div>
+
+							<p class="skills-cmd skills-cmd-cursor"><span class="skills-cursor"></span></p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -165,27 +216,19 @@
 		<section id="contact">
 			<div class="container fond4">
 				<div class="container_top">
-					<div class="contact-form">
-						<h2>Contactez-moi</h2>
-						<form id="contactForm" novalidate>
-							<div class="form-group">
-								<label for="name">Nom :</label>
-								<input type="text" id="name" name="name" required>
-								<div class="error" id="nameError"></div>
-							</div>
-							<div class="form-group">
-								<label for="email">Email :</label>
-								<input type="email" id="email" name="email" required>
-								<div class="error" id="emailError"></div>
-							</div>
-							<div class="form-group">
-								<label for="message">Message :</label>
-								<textarea id="message" name="message" required></textarea>
-								<div class="error" id="messageError"></div>
-							</div>
-							<button type="submit">Envoyer</button>
-						</form>
-					</div>
+					<form class="contact-form">
+						<h2>Me contacter</h2>
+
+						<input type="text" placeholder="Votre nom" required>
+
+						<input type="email" placeholder="Votre email" required>
+
+						<textarea placeholder="Votre message" required></textarea>
+
+						<button type="submit">
+							Envoyer le message
+						</button>
+					</form>
 				</div>
 			</div>
 		</section>

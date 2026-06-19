@@ -2,6 +2,7 @@
 <html >
 <!-- Un exemple de commentaires : mettre tous les logos dans le même dossier-->
 <!-- en-tête de l’onglet-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
 	<meta name = "author" content = "sbreneliere"/>
@@ -11,7 +12,6 @@
 </head>
 
 <body>
-    
 	<nav class="style_nav">
 		<h2 class="titre_nav">
 			Brenelière Samantha
@@ -28,95 +28,128 @@
 		</ul>
 	</nav>
 
-	<main class="main-container">
+	<main class="fond5">
+		<div class="main-container">
+			<div class="static">
+				<div class="project-box">
+					<p class="texte-important">Sommaire :</p>
+					<ul class="sommaire-list">
+						<li data-name="Nonogram">Nonogram</li>
+						<li data-name="ouv-inf">Ouverture Info</li>
+						<li data-name="SiteBDD">Site de critique de jeux vidéos</li>
+						<li data-name="Pokedex">Pokédex</li>
+					</ul>
+				</div>
 
-		<div class="static">
-			<div class="box-gauche">
-				<p class="texte-important">Sommaire :</p>
-				<ul class="sommaire-list">
-					<li data-name="Nonogram">Nonogram</li>
-					<li data-name="ouv-inf">Ouverture Info</li>
-					<li data-name="SiteBDD">Site de critique de jeux vidéos</li>
-					<li data-name="Pokedex">Pokédex</li>
-				</ul>
+				<div class="project-box">
+					<p class="texte-important">Langage utilisés</p>
+					<ul class="filter-list">
+						<li data-tag="python">
+							<img src="image/python-icon.png" alt="Python" class="tag-icon">
+							<span class="tag-name">Python</span>
+						</li>
+						<li data-tag="C">
+							<img src="image/c-icon.png" alt="C" class="tag-icon">
+							<span class="tag-name">C</span>
+						</li>
+						<li data-tag="java">
+							<img src="image/java-icon.jpg" alt="Java" class="tag-icon">
+							<span class="tag-name">Java</span>
+						</li>
+						<li data-tag="HTML">
+							<img src="image/html-icon.png" alt="HTML" class="tag-icon">
+							<span class="tag-name">HTML</span>
+						</li>
+						<li data-tag="SQL">
+							<img src="image/sql-icon.jpg" alt="SQL" class="tag-icon">
+							<span class="tag-name">SQL</span>
+						</li>
+						<li data-tag="php">
+							<img src="image/php-icon.png" alt="php" class="tag-icon">
+							<span class="tag-name">php</span>
+						</li>
+						<li data-tag="3D experience">
+							<img src="image/3D-experience-icon.png" alt="3D experience" class="tag-icon">
+							<span class="tag-name">3D expérience</span>
+						</li>
+					</ul>
+					<p class="texte-important" style="margin-top:2vh">Outils utilisés</p>
+					<ul class="filter-list">
+						<li data-tag="Arduino">Arduino</li>
+						<li data-tag="LCD">LCD tactile</li>
+						<li data-tag="Impression3D">Impression 3D</li>
+					</ul>
+				</div>
 			</div>
 
-			<div class="box-gauche">
-				<p class="texte-important">Langage utilisés</p>
-				<ul class="filter-list">
-					<li data-tag="Python">
-						<img src="image/python-icon.png" alt="Python" class="tag-icon">
-						<span class="tag-name">Python</span>
-					</li>
-					<li data-tag="C">
-						<img src="image/c-icon.png" alt="C" class="tag-icon">
-						<span class="tag-name">C</span>
-					</li>
-					<li data-tag="Java">
-						<img src="image/java-icon.jpg" alt="Java" class="tag-icon">
-						<span class="tag-name">Java</span>
-					</li>
-					<li data-tag="HTML">
-						<img src="image/html-icon.png" alt="HTML" class="tag-icon">
-						<span class="tag-name">HTML</span>
-					</li>
-					<li data-tag="SQL">
-						<img src="image/sql-icon.jpg" alt="SQL" class="tag-icon">
-						<span class="tag-name">SQL</span>
-					</li>
-					<li data-tag="php">
-						<img src="image/php-icon.png" alt="php" class="tag-icon">
-						<span class="tag-name">php</span>
-					</li>
-					<li data-tag="3D experience">
-						<img src="image/3D-experience-icon.png" alt="3D experience" class="tag-icon">
-						<span class="tag-name">3D expérience</span>
-					</li>
-				</ul>
-				<p class="texte-important">Outils utilisés</p>
-				<ul class="filter-list">
-					<li data-tag="Arduino">Arduino</li>
-					<li data-tag="LCD">LCD tactile</li>
-					<li data-tag="Impression3D">Impression 3D</li>
-				</ul>
+			<div class="dynamic">
+				<a href="projets_etudes/nonogram.html" class="project-box" data-name="Nonogram" data-tags="C,Arduino,LCD,Impression3D">
+					<p class="texte-important">Nonogram</p>
+					<p class="date">ESIR 1 (2026)</p>
+					<p class="texte">
+						Codage d'un Nonogram en électronique sur un écran LCD tactile + impression 3D.
+					</p>
+					<div class="project-tags">
+						<span class="tag-pill">
+							<img src="image/c-icon.png" alt="C">
+							C
+						</span>
+						<span class="tag-pill">Arduino</span>
+						<span class="tag-pill">LCD tactile</span>
+						<span class="tag-pill">Impression 3D</span>
+					</div>
+				</a>
+
+				<a href="projets_etudes/projet_ouv_inf.html" class="project-box" data-name="ouv-inf" data-tags="python">
+					<p class="texte-important">Jeu Ouverture Info</p>
+					<p class="date">Prépa 2 (2025)</p>
+					<p class="texte">
+						Dans le cadre d'un cours d'ouverture d'informatique, nous avons codé en groupe de 4 un jeu en réseau local.
+					</p>
+					<div class="project-tags">
+						<span class="tag-pill">
+							<img src="image/python-icon.png" alt="Python">
+							Python
+						</span>
+					</div>
+				</a>
+
+				<a href="projets_etudes/projet_BDD.html" class="project-box" data-name="SiteBDD" data-tags="HTML,SQL">
+					<p class="texte-important">Site de critique de jeux vidéos</p>
+					<p class="date">Prépa 2 (2025)</p>
+					<p class="texte">
+						Dans le cadre d'un cours de base de données, nous avons codé un site de critiques de jeux vidéos.
+					</p>
+					<div class="project-tags">
+						<span class="tag-pill">
+							<img src="image/html-icon.png" alt="HTML">
+							HTML
+						</span>
+						<span class="tag-pill">
+							<img src="image/sql-icon.jpg" alt="SQL">
+							SQL
+						</span>
+					</div>
+				</a>
+
+				<a href="projets_etudes/pokedex.html" class="project-box" data-name="Pokedex" data-tags="HTML,SQL">
+					<p class="texte-important">Pokédex</p>
+					<p class="date">Prépa 2 (2025)</p>
+					<p class="texte">
+						Dans le cadre d'un cours de base de données, nous avons codé un pokédex.
+					</p>
+					<div class="project-tags">
+						<span class="tag-pill">
+							<img src="image/html-icon.png" alt="HTML">
+							HTML
+						</span>
+						<span class="tag-pill">
+							<img src="image/sql-icon.jpg" alt="SQL">
+							SQL
+						</span>
+					</div>
+				</a>
 			</div>
-		</div>
-
-		<div class="dynamic">
-			<a href="projets_etudes/nonogram.html" class="box-droite" data-name="Nonogram" data-tags="C,Arduino,LCD,Impression3D">
-				<p class="texte-important">Nonogram</p>
-				<p class="date">ESIR 1 (2026)</p>
-				<p class="texte">
-					Codage d'un Nonogram en électronique sur un écran LCD tactile + impression 3D.
-				</p>
-				<p class="texte">
-					à faire : mettre les tags des langages et outils utilisé 
-				</p>
-			</a>
-
-			<a href="projets_etudes/projet_ouv_inf.html" class="box-droite" data-name="ouv-inf" data-tags="python">
-				<p class="texte-important">Jeu Ouverture Info</p>
-				<p class="date">Prépa 2 (2025)</p>
-				<p class="texte">
-					Dans le cadre d'un cours d'ouverture d'informatique, nous avons codé en groupe de 4 un jeu en réseau local.
-				</p>
-			</a>
-
-			<a href="projets_etudes/projet_BDD.html" class="box-droite" data-name="SiteBDD" data-tags="HTML,SQL">
-				<p class="texte-important">Site de critique de jeux vidéos</p>
-				<p class="date">Prépa 2 (2025)</p>
-				<p class="texte">
-					Dans le cadre d'un cours de base de données, nous avons codé un site de critiques de jeux vidéos.
-				</p>
-			</a>
-
-			<a href="projets_etudes/pokedex.html" class="box-droite" data-name="Pokedex" data-tags="HTML,SQL">
-				<p class="texte-important">Pokédex</p>
-				<p class="date">Prépa 2 (2025)</p>
-				<p class="texte">
-					Dans le cadre d'un cours de base de données, nous avons codé un pokédex.
-				</p>
-			</a>
 		</div>
 	</main>
 
@@ -135,65 +168,6 @@
 		</div>
 	</footer>
 
+	<script src="JavaScript/script.js"></script>
 </body >
-
-<script>
-	const projectBoxes = document.querySelectorAll('.dynamic .box-droite');
-	const nameFilters = document.querySelectorAll('.static [data-name]');
-	const tagFilters = document.querySelectorAll('.static [data-tag]');
-
-	// Clique sur le nom d'un projet → affiche seulement ce projet
-	nameFilters.forEach(filter => {
-		filter.addEventListener('click', () => {
-			const name = filter.dataset.name;
-
-			// Toggle active
-			const isActive = filter.classList.contains('active');
-			nameFilters.forEach(f => f.classList.remove('active'));
-			if(!isActive) filter.classList.add('active');
-
-			// Filtre les projets
-			projectBoxes.forEach(box => {
-				if(!isActive && box.dataset.name !== name) {
-					box.style.display = 'none';
-				} else {
-					box.style.display = 'block';
-				}
-			});
-		});
-	});
-
-	// Clique sur un tag → filtre tous les projets ayant ce tag
-	tagFilters.forEach(filter => {
-		filter.addEventListener('click', () => {
-			const tag = filter.dataset.tag;
-
-			const isActive = filter.classList.contains('active');
-			filter.classList.toggle('active');
-
-			if (!isActive) {
-				tagFilters.forEach(filter2 => {
-					if (filter2!=filter) {
-						filter2.classList.remove('active');
-					}
-				});
-			}
-
-			projectBoxes.forEach(box => {
-				const tags = box.dataset.tags.split(',');
-				if(isActive) {
-					// Si on désélectionne, montre tous
-					box.style.display = 'block';
-				} else {
-					// Sinon masque si le tag n'est pas présent
-					if(!tags.includes(tag)) {
-						box.style.display = 'none';
-					} else {
-						box.style.display = 'block';
-					}
-				}
-			});
-		});
-	});
-</script>
 </html>
