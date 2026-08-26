@@ -1,0 +1,239 @@
+<!DOCTYPE html >
+<html >
+<!-- Un exemple de commentaires : mettre tous les logos dans le même dossier-->
+<!-- en-tête de l’onglet-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+	<meta name = "author" content = "sbreneliere"/>
+	<link rel="icon" href="image/logo_site.avif"/>
+	<title> Portfolio </title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+</head>
+
+<body>
+	<nav class="style_nav">
+		<h2 class="titre_nav">
+			Brenelière Samantha
+		</h2>
+		<ul>
+			<li><a href="index.html#presentation" class="nav-link" > Présentation </a></li>
+			<li><a href="index.html#experiences" class="nav-link">Expériences</a></li>
+			<li><a href="index.html#diplomes" class="nav-link">Diplômes</a></li>
+			<li><a href="index.html#competences" class="nav-link">Compétences</a></li>
+			<li><a href="index.html#contact" class="nav-link">Contact</a></li>
+			<li><a href="projets.html" class="nav-link active">Projets </a></li>
+			<!--si on met rien dans href renvoie à la page actuelle (réactualise)-->
+			<!--href="#" pour ne pas réactualiser -->
+			<li>
+				<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le thème clair / sombre">
+					<img class="icon-sun" src="image/Soleil.png" alt="Mode clair">
+					<img class="icon-moon" src="image/Moon.png" alt="Mode sombre">
+				</button>
+			</li>
+		</ul>
+	</nav>
+
+	<main class="fond5">
+		<div class="main-container">
+			<div class="static">
+				<div class="project-box">
+					<p class="texte-important">Sommaire :</p>
+					<ul class="sommaire-list">
+						<li data-name="Nonogram">Nonogram</li>
+						<li data-name="Esirfy">Esirfy</li>
+						<li data-name="Fourmiliere">Fourmilière</li>
+						<li data-name="ShootThemUp">Shoot them up</li>
+						<li data-name="ouv-inf">Ouverture Info</li>
+						<li data-name="SiteBDD">Site de critique de jeux vidéos</li>
+						<li data-name="Pokedex">Pokédex</li>
+					</ul>
+				</div>
+
+				<div class="project-box">
+					<p class="texte-important">Langage utilisés</p>
+					<ul class="filter-list">
+						<li data-tag="python">
+							<img src="image/python-icon.png" alt="Python" class="tag-icon">
+							<span class="tag-name">Python</span>
+						</li>
+						<li data-tag="C">
+							<img src="image/c-icon.png" alt="C" class="tag-icon">
+							<span class="tag-name">C</span>
+						</li>
+						<li data-tag="C++">
+							<img src="image/c++.png" alt="C++" class="tag-icon">
+							<span class="tag-name">C++</span>
+						</li>
+						<li data-tag="java">
+							<img src="image/java-icon.jpg" alt="Java" class="tag-icon">
+							<span class="tag-name">Java</span>
+						</li>
+						<li data-tag="HTML">
+							<img src="image/html-icon.png" alt="HTML" class="tag-icon">
+							<span class="tag-name">HTML</span>
+						</li>
+						<li data-tag="SQL">
+							<img src="image/sql-icon.jpg" alt="SQL" class="tag-icon">
+							<span class="tag-name">SQL</span>
+						</li>
+						<li data-tag="php">
+							<img src="image/php-icon.png" alt="php" class="tag-icon">
+							<span class="tag-name">php</span>
+						</li>
+						<li data-tag="3D experience">
+							<img src="image/3D-experience-icon.png" alt="3D experience" class="tag-icon">
+							<span class="tag-name">3D expérience</span>
+						</li>
+					</ul>
+					<p class="texte-important" style="margin-top:2vh">Outils utilisés</p>
+					<ul class="filter-list">
+						<li data-tag="Arduino">Arduino</li>
+						<li data-tag="LCD">LCD tactile</li>
+						<li data-tag="Impression3D">Impression 3D</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="dynamic">
+				<a href="projets_etudes/nonogram.html" class="project-box" data-name="Nonogram" data-tags="C,Arduino,LCD,Impression3D">
+					<p class="texte-important">Nonogram</p>
+					<p class="date">ESIR 1 (2026)</p>
+					<p class="texte">
+						Codage d'un Nonogram en électronique sur un écran LCD tactile + impression 3D d'un boitier.
+					</p>
+					<div class="project-tags">
+						<span class="tag-pill">
+							<img src="image/c-icon.png" alt="C">
+							C
+						</span>
+						<span class="tag-pill">Arduino</span>
+						<span class="tag-pill">LCD tactile</span>
+						<span class="tag-pill">Impression 3D</span>
+					</div>
+				</a>
+
+				<a href="projets_etudes/esirfy.html" class="project-box" data-name="Esirfy" data-tags="HTML,SQL,php">
+					<p class="texte-important">Esirfy</p>
+					<p class="date">ESIR 1 (2026)</p>
+					<p class="texte">
+						Codage d'une base de donées et d'une interface pour une application de streaming de musique.
+					</p>
+					<div class="project-tags">
+						<span class="tag-pill">
+							<img src="image/html-icon.png" alt="HTML">
+							HTML
+						</span>
+						<span class="tag-pill">
+							<img src="image/sql-icon.jpg" alt="SQL">
+							SQL
+						</span>
+						<span class="tag-pill">
+							<img src="image/php-icon.png" alt="php">
+							php
+						</span>
+					</div>
+				</a>
+
+				<a href="projets_etudes/fourmiliere.html" class="project-box" data-name="Fourmiliere" data-tags="C++">
+					<p class="texte-important">Fourmilière</p>
+					<p class="date">ESIR 1 (2026)</p>
+					<p class="texte">
+						Codage d'une fourmilière en C++ : création, modification et destruction de différentes entitées, gestions des mouvements et des reproductions des fourmis.
+					</p>
+					<div class="project-tags">
+						<span class="tag-pill">
+							<img src="image/c++.png" alt="C++">
+							C++
+						</span>
+					</div>
+				</a>
+				
+				<a href="projets_etudes/shootThemUp.html" class="project-box" data-name="ShootThemUp" data-tags="C++">
+					<p class="texte-important">Shoot them up</p>
+					<p class="date">ESIR 1 (2026)</p>
+					<p class="texte">
+						Codage en équipe d'un shoot them up, sur deux jours, dans le cadre du projet de fin d'année d'ESIR 1.
+					</p>
+					<div class="project-tags">
+						<span class="tag-pill">
+							<img src="image/c++.png" alt="C++">
+							C++
+						</span>
+					</div>
+				</a>
+
+				<a href="projets_etudes/projet_ouv_inf.html" class="project-box" data-name="ouv-inf" data-tags="python">
+					<p class="texte-important">Jeu Ouverture Info</p>
+					<p class="date">Prépa 2 (2025)</p>
+					<p class="texte">
+						Dans le cadre d'un cours d'ouverture d'informatique, nous avons codé en groupe de 4 un jeu en réseau local.
+					</p>
+					<div class="project-tags">
+						<span class="tag-pill">
+							<img src="image/python-icon.png" alt="Python">
+							Python
+						</span>
+					</div>
+				</a>
+
+				<a href="projets_etudes/projet_BDD.html" class="project-box" data-name="SiteBDD" data-tags="HTML,SQL">
+					<p class="texte-important">Site de critique de jeux vidéos</p>
+					<p class="date">Prépa 2 (2025)</p>
+					<p class="texte">
+						Dans le cadre d'un cours de base de données, nous avons codé un site de critiques de jeux vidéos.
+					</p>
+					<div class="project-tags">
+						<span class="tag-pill">
+							<img src="image/html-icon.png" alt="HTML">
+							HTML
+						</span>
+						<span class="tag-pill">
+							<img src="image/sql-icon.jpg" alt="SQL">
+							SQL
+						</span>
+					</div>
+				</a>
+
+				<a href="projets_etudes/pokedex.html" class="project-box" data-name="Pokedex" data-tags="HTML,SQL">
+					<p class="texte-important">Pokédex</p>
+					<p class="date">Prépa 2 (2025)</p>
+					<p class="texte">
+						Dans le cadre d'un cours de base de données, nous avons codé un pokédex.
+					</p>
+					<div class="project-tags">
+						<span class="tag-pill">
+							<img src="image/html-icon.png" alt="HTML">
+							HTML
+						</span>
+						<span class="tag-pill">
+							<img src="image/sql-icon.jpg" alt="SQL">
+							SQL
+						</span>
+					</div>
+				</a>
+
+				<!-- Projet intelligence artificiel ( analyse d'un jeu de données afin de prédire et de classifier celui-ci) -->
+				
+			</div>
+		</div>
+	</main>
+
+    <footer>
+		<div class="footer-left">
+			<h3>Samantha Brenelière</h3>
+			<p>Étudiante en informatique</p>
+		</div>
+
+		<div class="footer-center">
+			<p>✉ samantha2004@orange.fr</p>
+		</div>
+
+		<div class="footer-right">
+			<p>© 2026</p>
+		</div>
+	</footer>
+
+	<script src="JavaScript/script.js"></script>
+</body >
+</html>
