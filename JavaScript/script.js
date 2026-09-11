@@ -176,3 +176,75 @@ tagFilters.forEach(filter => {
         });
     });
 });
+
+///////////////////////////////////////////////////
+///////////// Thème sombre et clair ///////////////
+///////////////////////////////////////////////////
+
+(function applyStoredTheme() {
+  var stored = null;
+  try {
+    stored = localStorage.getItem("theme");
+  } catch (e) {
+    /* localStorage indisponible (mode privé strict, etc.) : on ignore */
+  }
+ 
+  var theme = stored;
+  if (!theme) {
+    var prefersLight =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: light)").matches;
+    theme = prefersLight ? "light" : "dark";
+  }
+ 
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+ 
+document.addEventListener("DOMContentLoaded", function () {
+  var btn = document.getElementById("theme-toggle");
+  if (!btn) return;
+ 
+  btn.addEventListener("click", function () {
+    var root = document.documentElement;
+    var current = root.getAttribute("data-theme") === "light" ? "light" : "dark";
+    var next = current === "light" ? "dark" : "light";
+ 
+    root.setAttribute("data-theme", next);
+ 
+    try {
+      localStorage.setItem("theme", next);
+    } catch (e) {
+      /* stockage indisponible : le choix ne sera pas mémorisé, pas bloquant */
+    }
+  });
+});
+///////////////////////////////////////////////////
+//////////// Navigation mobile compacte ///////////
+///////////////////////////////////////////////////
+const mobileNav = document.querySelector('nav.style_nav');
+if (mobileNav) {
+    const navList = mobileNav.querySelector('ul');
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'mobile-nav-toggle';
+    toggle.setAttribute('aria-label', 'Ouvrir le menu');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.innerHTML = '<span></span>';
+    mobileNav.insertBefore(toggle, navList);
+
+    const closeMenu = () => {
+        mobileNav.classList.remove('nav-open');
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Ouvrir le menu');
+    };
+
+    toggle.addEventListener('click', () => {
+        const isOpen = mobileNav.classList.toggle('nav-open');
+        toggle.classList.toggle('is-open', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+    });
+
+    navList.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+}
