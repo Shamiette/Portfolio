@@ -15,17 +15,23 @@
 			Brenelière Samantha
 		</h2>
 		<ul>
-			<li><a href="../index.html#presentation" class="nav-link"> Présentation </a></li>
-			<li><a href="../index.html#experiences" class="nav-link">Expériences</a></li>
-			<li><a href="../index.html#diplomes" class="nav-link">Diplômes</a></li>
-			<li><a href="../index.html#competences" class="nav-link">Compétences</a></li>
-			<li><a href="../index.html#contact" class="nav-link">Contact</a></li>
-			<li><a href="../projets.html" class="nav-link"> Projets </a></li>
+			<li><a href="../index.html#presentation" class="nav-link" data-i18n="nav-presentation"> Présentation </a></li>
+			<li><a href="../index.html#experiences" class="nav-link" data-i18n="nav-experiences">Expériences</a></li>
+			<li><a href="../index.html#diplomes" class="nav-link" data-i18n="nav-diplomes">Diplômes</a></li>
+			<li><a href="../index.html#competences" class="nav-link" data-i18n="nav-competences">Compétences</a></li>
+			<li><a href="../index.html#contact" class="nav-link" data-i18n="nav-contact">Contact</a></li>
+			<li><a href="../projets.html" class="nav-link" data-i18n="nav-projets"> Projets </a></li>
 			<li><a href="esirfy.html" class="active"> Esirfy </a></li>
 			<li>
-				<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le thème clair / sombre">
+				<button class="theme-toggle" id="theme-toggle" type="button" data-i18n-aria="theme-toggle-aria" aria-label="Basculer le thème clair / sombre">
 					<img class="icon-sun" src="../image/Soleil.png" alt="Mode clair">
 					<img class="icon-moon" src="../image/Moon.png" alt="Mode sombre">
+				</button>
+			</li>
+			<li>
+				<button class="theme-toggle" id="lang-toggle" type="button" data-i18n-aria="lang-toggle-aria" aria-label="Basculer la langue">
+					<img class="icon-fr" src="../image/france.svg" alt="Français">
+					<img class="icon-en" src="../image/anglais.svg" alt="Anglais">
 				</button>
 			</li>
 		</ul>
@@ -39,12 +45,12 @@
 					<p class="titre">Esirfy</p>
 					<p class="date">ESIR 1 (2026)</p>
 
-					<a href="#" class="git-link" target="_blank" rel="noopener">
+					<a href="#" class="git-link" target="_blank" rel="noopener" data-i18n="git-link">
 						↗ Voir le dépôt Git
 					</a>
 
-					<p class="texte-important" style="margin-top: 1.5vh;">Description</p>
-					<p class="texte" style="margin-top: 0.8vh;">
+					<p class="texte-important" style="margin-top: 1.5vh;" data-i18n="desc-label">Description</p>
+					<p class="texte" style="margin-top: 0.8vh;" data-i18n="page-esirfy-desc">
 						Construction d'une base de données destinée à une application de streaming de musique.
 					</p>
 
@@ -78,7 +84,7 @@
 	<footer>
 		<div class="footer-left">
 			<h3>Samantha Brenelière</h3>
-			<p>Étudiante en informatique</p>
+			<p data-i18n="footer-role">Étudiante en informatique</p>
 		</div>
 
 		<div class="footer-center">

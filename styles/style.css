@@ -126,6 +126,14 @@ nav ul li a.active {
 html[data-theme="light"] .theme-toggle .icon-sun { display: block; }
 html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
 
+/* Bouton de langue : même principe que le bouton de thème.
+   Par défaut (lang="fr") on montre le drapeau anglais (= "cliquer pour passer en anglais"),
+   et une fois en anglais (lang="en") on montre le drapeau français. */
+.theme-toggle .icon-fr { display: none; }
+.theme-toggle .icon-en { display: block; }
+html[data-lang="en"] .theme-toggle .icon-fr { display: block; }
+html[data-lang="en"] .theme-toggle .icon-en { display: none; }
+
 /*****************************/
 /* Présentation (hero)       */
 /*****************************/
@@ -431,6 +439,19 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
 
 .contact-form button:hover { background: var(--accent); color: var(--bg); }
 .contact-form button:active { opacity: 0.85; }
+
+.contact-form button2 {
+  align-self: center;
+  padding: 8px 20px;
+  border: 1px solid var(--accent); border-radius: var(--radius);
+  background: transparent;
+  color: var(--accent); font-family: fontText; font-weight: 600; font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.contact-form button2:hover { background: var(--accent); color: var(--bg); }
+.contact-form button2:active { opacity: 0.85; }
 
 /*****************************/
 /* Footer                    */

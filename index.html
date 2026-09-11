@@ -16,18 +16,24 @@
 			Brenelière Samantha
 		</h2>
 		<ul>
-			<li><a href="index.html#presentation" class="nav-link active" > Présentation </a></li>
-			<li><a href="index.html#experiences" class="nav-link">Expériences</a></li>
-			<li><a href="index.html#diplomes" class="nav-link">Diplômes</a></li>
-			<li><a href="index.html#competences" class="nav-link">Compétences</a></li>
-			<li><a href="index.html#contact" class="nav-link">Contact</a></li>
-			<li><a href="projets.html" class="nav-link">Projets </a></li>
+			<li><a href="index.html#presentation" class="nav-link active" data-i18n="nav-presentation"> Présentation </a></li>
+			<li><a href="index.html#experiences" class="nav-link" data-i18n="nav-experiences">Expériences</a></li>
+			<li><a href="index.html#diplomes" class="nav-link" data-i18n="nav-diplomes">Diplômes</a></li>
+			<li><a href="index.html#competences" class="nav-link" data-i18n="nav-competences">Compétences</a></li>
+			<li><a href="index.html#contact" class="nav-link" data-i18n="nav-contact">Contact</a></li>
+			<li><a href="projets.html" class="nav-link" data-i18n="nav-projets">Projets </a></li>
 			<!--si on met rien dans href renvoie à la page actuelle (réactualise)-->
 			<!--href="#" pour ne pas réactualiser -->
 			<li>
-				<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le thème clair / sombre">
+				<button class="theme-toggle" id="theme-toggle" type="button" data-i18n-aria="theme-toggle-aria" aria-label="Basculer le thème clair / sombre">
 					<img class="icon-sun" src="image/Soleil.png" alt="Mode clair">
 					<img class="icon-moon" src="image/Moon.png" alt="Mode sombre">
+				</button>
+			</li>
+			<li>
+				<button class="theme-toggle" id="lang-toggle" type="button" data-i18n-aria="lang-toggle-aria" aria-label="Basculer la langue">
+					<img class="icon-fr" src="image/france.svg" alt="Français">
+					<img class="icon-en" src="image/anglais.svg" alt="Anglais">
 				</button>
 			</li>
 		</ul>
@@ -41,7 +47,7 @@
 					<div class="titre">
 						Brenelière Samantha
 					</div>
-					<div class="texte_pres" id="machine">
+					<div class="texte_pres" id="machine" data-i18n="hero-tagline">
 						Je suis élève ingénieure, en informatique
 					</div>
 				</div>
@@ -65,7 +71,7 @@
 		<section id="experiences">
 			<div class="container fond">
 				<div class="container_top">
-					<div class="texte-important2" style="z-index: 3;">
+					<div class="texte-important2" style="z-index: 3;" data-i18n="exp-title">
 						Stages / Expériences
 					</div>
 					<div class="chrono-timeline-wrapper">
@@ -73,12 +79,12 @@
 
 						<div class="chrono-timeline-event">
 							<div class="chrono-timeline-card chrono-timeline-card-top">
-								<h3>Conseillère à la vente - Easy cash - Quévert, France</h3>
-								<p class="date">Juin 2024</p>
+								<h3 data-i18n="exp1-h3">Conseillère à la vente - Easy cash - Quévert, France</h3>
+								<p class="date" data-i18n="exp1-date">Juin 2024</p>
 								<div class="chrono-timeline-details">
-									<p>Sens du contact et de l’écoute active ;</p>
-									<p>Collaboration / travail avec l’équipe ;</p>	
-									<p>Reformatage des ordinateurs avant la remise en vente.</p>
+									<p data-i18n="exp1-d1">Sens du contact et de l’écoute active ;</p>
+									<p data-i18n="exp1-d2">Collaboration / travail avec l’équipe ;</p>	
+									<p data-i18n="exp1-d3">Reformatage des ordinateurs avant la remise en vente.</p>
 								</div>
 							</div>
 							<div class="chrono-timeline-dot"></div>
@@ -87,28 +93,28 @@
 						<div class="chrono-timeline-event">
 							<div class="chrono-timeline-dot"></div>
 							<div class="chrono-timeline-card chrono-timeline-card-bottom">
-								<h3>Gérante de snack - Beauséjour - Saint Samson/Rance, France</h3>
-								<p class="date">Juillet - Aout 2025</p>
+								<h3 data-i18n="exp2-h3">Gérante de snack - Beauséjour - Saint Samson/Rance, France</h3>
+								<p class="date" data-i18n="exp2-date">Juillet - Aout 2025</p>
 								<div class="chrono-timeline-details">
-									<p>Utilisation de logiciels de caisse, clôture de caisse, gestion des espèces ;</p>
-									<p>Polyvalence / Capacité à gérer plusieurs tâches en même temps ;</p>	
-									<p>Gérer les périodes de forte affluence avec efficacité et sang-froid ;</p>
-									<p>Réactivité, autonomie et sens du service.</p>
+									<p data-i18n="snack-d1">Utilisation de logiciels de caisse, clôture de caisse, gestion des espèces ;</p>
+									<p data-i18n="snack-d2">Polyvalence / Capacité à gérer plusieurs tâches en même temps ;</p>	
+									<p data-i18n="snack-d3">Gérer les périodes de forte affluence avec efficacité et sang-froid ;</p>
+									<p data-i18n="snack-d4">Réactivité, autonomie et sens du service.</p>
 								</div>
 							</div>
 						</div>
 
 						<div class="chrono-timeline-event">
 							<div class="chrono-timeline-card chrono-timeline-card-top">
-								<h3>Stage en réseau et télécommunication - SNCF Réseau - Rennes, France</h3>
-								<p class="date">Juin 2026</p>
+								<h3 data-i18n="exp3-h3">Stage en réseau et télécommunication - SNCF Réseau - Rennes, France</h3>
+								<p class="date" data-i18n="exp3-date">Juin 2026</p>
 								<div class="chrono-timeline-details">
-									<p>Surveiller et maintenir les systèmes d’exploitation des serveurs du périmètre régional ;</p>
-									<p>Surveiller et maintenir des systèmes d’exploitation et intervenir sur des incidents utilisateurs ;</p>	
-									<p>Surveiller et maintenir les équipements réseau ;</p>
-									<p>Configurer des commutateurs en appliquant les directives et les règles de sécurité ;</p>
-									<p>Concevoir une infrastructure réseau (étude de régénération de matériel LAN) ;</p>
-									<p>Analyser le trafic réseau (Wireshark) pour détecter des anomalies sur les LAN régionaux.</p>
+									<p data-i18n="exp3-d1">Surveiller et maintenir les systèmes d’exploitation des serveurs du périmètre régional ;</p>
+									<p data-i18n="exp3-d2">Surveiller et maintenir des systèmes d’exploitation et intervenir sur des incidents utilisateurs ;</p>	
+									<p data-i18n="exp3-d3">Surveiller et maintenir les équipements réseau ;</p>
+									<p data-i18n="exp3-d4">Configurer des commutateurs en appliquant les directives et les règles de sécurité ;</p>
+									<p data-i18n="exp3-d5">Concevoir une infrastructure réseau (étude de régénération de matériel LAN) ;</p>
+									<p data-i18n="exp3-d6">Analyser le trafic réseau (Wireshark) pour détecter des anomalies sur les LAN régionaux.</p>
 								</div>
 							</div>
 							<div class="chrono-timeline-dot"></div>
@@ -117,13 +123,13 @@
 						<div class="chrono-timeline-event">
 							<div class="chrono-timeline-dot"></div>
 							<div class="chrono-timeline-card chrono-timeline-card-bottom">
-								<h3>Gérante de snack - Beauséjour - Saint Samson/Rance, France</h3>
-								<p class="date">Juillet - Aout 2026</p>
+								<h3 data-i18n="exp2-h3">Gérante de snack - Beauséjour - Saint Samson/Rance, France</h3>
+								<p class="date" data-i18n="exp4-date">Juillet - Aout 2026</p>
 								<div class="chrono-timeline-details">
-									<p>Utilisation de logiciels de caisse, clôture de caisse, gestion des espèces ;</p>
-									<p>Polyvalence / Capacité à gérer plusieurs tâches en même temps ;</p>	
-									<p>Gérer les périodes de forte affluence avec efficacité et sang-froid ;</p>
-									<p>Réactivité, autonomie et sens du service.</p>
+									<p data-i18n="snack-d1">Utilisation de logiciels de caisse, clôture de caisse, gestion des espèces ;</p>
+									<p data-i18n="snack-d2">Polyvalence / Capacité à gérer plusieurs tâches en même temps ;</p>	
+									<p data-i18n="snack-d3">Gérer les périodes de forte affluence avec efficacité et sang-froid ;</p>
+									<p data-i18n="snack-d4">Réactivité, autonomie et sens du service.</p>
 								</div>
 							</div>
 						</div>
@@ -135,45 +141,45 @@
 		<section id="diplomes">
 			<div class="container fond2">
 				<div class="container_top">
-					<div class="texte-important2">
+					<div class="texte-important2" data-i18n="dip-title">
 						Cursus / diplômes :
 					</div>
 					<ul class="diploma-list">
 						<li class="diploma-card">
-							<h3>Brevet</h3>
+							<h3 data-i18n="dip1-h3">Brevet</h3>
 							<p class="date">2018 - 2019</p>
 
 							<div class="diploma-details">
-								<p>Mention : Très bien</p>
-								<p>Lieu : Collège Val de Rance à Plouer sur Rance</p>
+								<p data-i18n="dip1-d1">Mention : Très bien</p>
+								<p data-i18n="dip1-d2">Lieu : Collège Val de Rance à Plouer sur Rance</p>
 							</div>
 						</li>
 
 						<li class="diploma-card">
-							<h3>Bac spécialité mathématiques et physiques</h3>
+							<h3 data-i18n="dip2-h3">Bac spécialité mathématiques et physiques</h3>
 							<p class="date">2021 - 2022</p>
 
 							<div class="diploma-details">
-								<p>Mention : Assez bien</p>
-								<p>Lieu : Lycée la Fontaine des eaux à Dinan</p>
+								<p data-i18n="dip2-d1">Mention : Assez bien</p>
+								<p data-i18n="dip2-d2">Lieu : Lycée la Fontaine des eaux à Dinan</p>
 							</div>
 						</li>
 
 						<li class="diploma-card">
-							<h3>1ère année de licence de mathématiques</h3>
+							<h3 data-i18n="dip3-h3">1ère année de licence de mathématiques</h3>
 							<p class="date">2022 - 2023</p>
 
 							<div class="diploma-details">
-								<p>Lieu : Université de Rennes 1</p>
+								<p data-i18n="dip3-d1">Lieu : Université de Rennes 1</p>
 							</div>
 						</li>
 
 						<li class="diploma-card">
-							<h3>Cycle universitaire préparatoire aux grandes écoles</h3>
+							<h3 data-i18n="dip4-h3">Cycle universitaire préparatoire aux grandes écoles</h3>
 							<p class="date">2023 - 2025</p>
 
 							<div class="diploma-details">
-								<p>Lieu : ESIR à l'université de Rennes</p>
+								<p data-i18n="dip4-d1">Lieu : ESIR à l'université de Rennes</p>
 							</div>
 						</li>
 					</ul>
@@ -184,7 +190,7 @@
 		<section id="competences">
 			<div class="container fond3">
 				<div class="container_top">
-					<div class="texte-important2">
+					<div class="texte-important2" data-i18n="skills-title">
 						Langages & outils
 					</div>
 
@@ -196,7 +202,7 @@
 							<span class="skills-terminal-title">competences.sh</span>
 						</div>
 						<div class="skills-terminal-body">
-							<p class="skills-cmd">cat maitrise.txt</p>
+							<p class="skills-cmd" data-i18n="skills-cmd1">cat maitrise.txt</p>
 							<div class="skills-grid">
 								<span class="skill-chip skill-mastered">HTML</span>
 								<span class="skill-chip skill-mastered">CSS</span>
@@ -209,10 +215,10 @@
 								<span class="skill-chip skill-mastered">SQL</span>
 							</div>
 
-							<p class="skills-cmd">cat en_apprentissage.txt</p>
+							<p class="skills-cmd" data-i18n="skills-cmd2">cat en_apprentissage.txt</p>
 							<div class="skills-grid">
-								<span class="skill-chip skill-learning">Assembleur</span>
-								<span class="skill-chip skill-learning">3D Expérience</span>
+								<span class="skill-chip skill-learning" data-i18n="skill-asm">Assembleur</span>
+								<span class="skill-chip skill-learning" data-i18n="skill-3d">3D Expérience</span>
 								<span class="skill-chip skill-learning">JavaScript</span>
 								<span class="skill-chip skill-learning">C</span>
 							</div>
@@ -228,15 +234,15 @@
 			<div class="container fond4">
 				<div class="container_top">
 					<form class="contact-form">
-						<h2>Me contacter</h2>
+						<h2 data-i18n="contact-title">Me contacter</h2>
 
-						<input type="text" placeholder="Votre nom" required>
+						<input type="text" placeholder="Votre nom" data-i18n-placeholder="contact-name" required>
 
-						<input type="email" placeholder="Votre email" required>
+						<input type="email" placeholder="Votre email" data-i18n-placeholder="contact-email" required>
 
-						<textarea placeholder="Votre message" required></textarea>
+						<textarea placeholder="Votre message" data-i18n-placeholder="contact-message" required></textarea>
 
-						<button type="submit">
+						<button type="submit" data-i18n="contact-submit">
 							Envoyer le message
 						</button>
 					</form>
@@ -249,7 +255,7 @@
     <footer>
 		<div class="footer-left">
 			<h3>Samantha Brenelière</h3>
-			<p>Étudiante en informatique</p>
+			<p data-i18n="footer-role">Étudiante en informatique</p>
 		</div>
 
 		<div class="footer-center">

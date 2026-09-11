@@ -17,18 +17,24 @@
 			Brenelière Samantha
 		</h2>
 		<ul>
-			<li><a href="index.html#presentation" class="nav-link" > Présentation </a></li>
-			<li><a href="index.html#experiences" class="nav-link">Expériences</a></li>
-			<li><a href="index.html#diplomes" class="nav-link">Diplômes</a></li>
-			<li><a href="index.html#competences" class="nav-link">Compétences</a></li>
-			<li><a href="index.html#contact" class="nav-link">Contact</a></li>
-			<li><a href="projets.html" class="nav-link active">Projets </a></li>
+			<li><a href="index.html#presentation" class="nav-link" data-i18n="nav-presentation"> Présentation </a></li>
+			<li><a href="index.html#experiences" class="nav-link" data-i18n="nav-experiences">Expériences</a></li>
+			<li><a href="index.html#diplomes" class="nav-link" data-i18n="nav-diplomes">Diplômes</a></li>
+			<li><a href="index.html#competences" class="nav-link" data-i18n="nav-competences">Compétences</a></li>
+			<li><a href="index.html#contact" class="nav-link" data-i18n="nav-contact">Contact</a></li>
+			<li><a href="projets.html" class="nav-link active" data-i18n="nav-projets">Projets </a></li>
 			<!--si on met rien dans href renvoie à la page actuelle (réactualise)-->
 			<!--href="#" pour ne pas réactualiser -->
 			<li>
-				<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le thème clair / sombre">
+				<button class="theme-toggle" id="theme-toggle" type="button" data-i18n-aria="theme-toggle-aria" aria-label="Basculer le thème clair / sombre">
 					<img class="icon-sun" src="image/Soleil.png" alt="Mode clair">
 					<img class="icon-moon" src="image/Moon.png" alt="Mode sombre">
+				</button>
+			</li>
+			<li>
+				<button class="theme-toggle" id="lang-toggle" type="button" data-i18n-aria="lang-toggle-aria" aria-label="Basculer la langue">
+					<img class="icon-fr" src="image/france.svg" alt="Français">
+					<img class="icon-en" src="image/anglais.svg" alt="Anglais">
 				</button>
 			</li>
 		</ul>
@@ -38,20 +44,20 @@
 		<div class="main-container">
 			<div class="static">
 				<div class="project-box">
-					<p class="texte-important">Sommaire :</p>
+					<p class="texte-important" data-i18n="proj-sommaire">Sommaire :</p>
 					<ul class="sommaire-list">
 						<li data-name="Nonogram">Nonogram</li>
 						<li data-name="Esirfy">Esirfy</li>
 						<li data-name="Fourmiliere">Fourmilière</li>
 						<li data-name="ShootThemUp">Shoot them up</li>
-						<li data-name="ouv-inf">Ouverture Info</li>
-						<li data-name="SiteBDD">Site de critique de jeux vidéos</li>
+						<li data-name="ouv-inf" data-i18n="proj-ouvinf-name">Ouverture Info</li>
+						<li data-name="SiteBDD" data-i18n="proj-bdd-name">Site de critique de jeux vidéos</li>
 						<li data-name="Pokedex">Pokédex</li>
 					</ul>
 				</div>
 
 				<div class="project-box">
-					<p class="texte-important">Langage utilisés</p>
+					<p class="texte-important" data-i18n="proj-langages">Langage utilisés</p>
 					<ul class="filter-list">
 						<li data-tag="python">
 							<img src="image/python-icon.png" alt="Python" class="tag-icon">
@@ -86,11 +92,11 @@
 							<span class="tag-name">3D expérience</span>
 						</li>
 					</ul>
-					<p class="texte-important" style="margin-top:2vh">Outils utilisés</p>
+					<p class="texte-important" style="margin-top:2vh" data-i18n="proj-outils">Outils utilisés</p>
 					<ul class="filter-list">
 						<li data-tag="Arduino">Arduino</li>
-						<li data-tag="LCD">LCD tactile</li>
-						<li data-tag="Impression3D">Impression 3D</li>
+						<li data-tag="LCD" data-i18n="tag-lcd">LCD tactile</li>
+						<li data-tag="Impression3D" data-i18n="tag-3dprint">Impression 3D</li>
 					</ul>
 				</div>
 			</div>
@@ -99,7 +105,7 @@
 				<a href="projets_etudes/nonogram.html" class="project-box" data-name="Nonogram" data-tags="C,Arduino,LCD,Impression3D">
 					<p class="texte-important">Nonogram</p>
 					<p class="date">ESIR 1 (2026)</p>
-					<p class="texte">
+					<p class="texte" data-i18n="proj-nonogram-desc">
 						Codage d'un Nonogram en électronique sur un écran LCD tactile + impression 3D d'un boitier.
 					</p>
 					<div class="project-tags">
@@ -108,15 +114,15 @@
 							C
 						</span>
 						<span class="tag-pill">Arduino</span>
-						<span class="tag-pill">LCD tactile</span>
-						<span class="tag-pill">Impression 3D</span>
+						<span class="tag-pill" data-i18n="tag-lcd">LCD tactile</span>
+						<span class="tag-pill" data-i18n="tag-3dprint">Impression 3D</span>
 					</div>
 				</a>
 
 				<a href="projets_etudes/esirfy.html" class="project-box" data-name="Esirfy" data-tags="HTML,SQL,php">
 					<p class="texte-important">Esirfy</p>
 					<p class="date">ESIR 1 (2026)</p>
-					<p class="texte">
+					<p class="texte" data-i18n="proj-esirfy-desc">
 						Codage d'une base de donées et d'une interface pour une application de streaming de musique.
 					</p>
 					<div class="project-tags">
@@ -138,7 +144,7 @@
 				<a href="projets_etudes/fourmiliere.html" class="project-box" data-name="Fourmiliere" data-tags="C++">
 					<p class="texte-important">Fourmilière</p>
 					<p class="date">ESIR 1 (2026)</p>
-					<p class="texte">
+					<p class="texte" data-i18n="proj-fourmiliere-desc">
 						Codage d'une fourmilière en C++ : création, modification et destruction de différentes entitées, gestions des mouvements et des reproductions des fourmis.
 					</p>
 					<div class="project-tags">
@@ -152,7 +158,7 @@
 				<a href="projets_etudes/shootThemUp.html" class="project-box" data-name="ShootThemUp" data-tags="C++">
 					<p class="texte-important">Shoot them up</p>
 					<p class="date">ESIR 1 (2026)</p>
-					<p class="texte">
+					<p class="texte" data-i18n="proj-shoot-desc">
 						Codage en équipe d'un shoot them up, sur deux jours, dans le cadre du projet de fin d'année d'ESIR 1.
 					</p>
 					<div class="project-tags">
@@ -164,9 +170,9 @@
 				</a>
 
 				<a href="projets_etudes/projet_ouv_inf.html" class="project-box" data-name="ouv-inf" data-tags="python">
-					<p class="texte-important">Jeu Ouverture Info</p>
-					<p class="date">Prépa 2 (2025)</p>
-					<p class="texte">
+					<p class="texte-important" data-i18n="proj-ouvinf-title">Jeu Ouverture Info</p>
+					<p class="date" data-i18n="date-prepa2-2025">Prépa 2 (2025)</p>
+					<p class="texte" data-i18n="proj-ouvinf-desc">
 						Dans le cadre d'un cours d'ouverture d'informatique, nous avons codé en groupe de 4 un jeu en réseau local.
 					</p>
 					<div class="project-tags">
@@ -178,9 +184,9 @@
 				</a>
 
 				<a href="projets_etudes/projet_BDD.html" class="project-box" data-name="SiteBDD" data-tags="HTML,SQL">
-					<p class="texte-important">Site de critique de jeux vidéos</p>
-					<p class="date">Prépa 2 (2025)</p>
-					<p class="texte">
+					<p class="texte-important" data-i18n="proj-bdd-title">Site de critique de jeux vidéos</p>
+					<p class="date" data-i18n="date-prepa2-2025">Prépa 2 (2025)</p>
+					<p class="texte" data-i18n="proj-bdd-desc">
 						Dans le cadre d'un cours de base de données, nous avons codé un site de critiques de jeux vidéos.
 					</p>
 					<div class="project-tags">
@@ -197,8 +203,8 @@
 
 				<a href="projets_etudes/pokedex.html" class="project-box" data-name="Pokedex" data-tags="HTML,SQL">
 					<p class="texte-important">Pokédex</p>
-					<p class="date">Prépa 2 (2025)</p>
-					<p class="texte">
+					<p class="date" data-i18n="date-prepa2-2025">Prépa 2 (2025)</p>
+					<p class="texte" data-i18n="proj-pokedex-desc">
 						Dans le cadre d'un cours de base de données, nous avons codé un pokédex.
 					</p>
 					<div class="project-tags">
@@ -222,7 +228,7 @@
     <footer>
 		<div class="footer-left">
 			<h3>Samantha Brenelière</h3>
-			<p>Étudiante en informatique</p>
+			<p data-i18n="footer-role">Étudiante en informatique</p>
 		</div>
 
 		<div class="footer-center">
