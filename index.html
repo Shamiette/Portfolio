@@ -1,0 +1,251 @@
+<!DOCTYPE html >
+<html >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+	<meta name = "author" content = "sbreneliere"/>
+	<link rel="icon" href="image/logo_site.avif"/>
+	<title> Portfolio </title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+</head>
+
+<body>
+    
+	<nav class="style_nav">
+		<h2 class="titre_nav">
+			Portfolio
+		</h2>
+		<div class="nav-right">
+			<ul>
+				<li><a href="index.html#presentation" class="nav-link active" data-i18n="nav-presentation"> Présentation </a></li>
+				<li><a href="index.html#experiences" class="nav-link" data-i18n="nav-experiences">Expériences</a></li>
+				<li><a href="index.html#diplomes" class="nav-link" data-i18n="nav-diplomes">Diplômes</a></li>
+				<li><a href="index.html#competences" class="nav-link" data-i18n="nav-competences">Compétences</a></li>
+				<li><a href="projets.html" class="nav-link" data-i18n="nav-projets">Projets </a></li>
+				<!--si on met rien dans href renvoie à la page actuelle (réactualise)-->
+				<!--href="#" pour ne pas réactualiser -->
+			</ul>
+			<div class="nav-actions">
+				<button class="theme-toggle" id="theme-toggle" type="button" data-i18n-aria="theme-toggle-aria" aria-label="Basculer le thème clair / sombre">
+						<img class="icon-sun" src="image/Soleil.png" alt="Mode clair">
+						<img class="icon-moon" src="image/Moon.png" alt="Mode sombre">
+					</button>
+				<button class="theme-toggle" id="lang-toggle" type="button" data-i18n-aria="lang-toggle-aria" aria-label="Basculer la langue">
+						<img class="icon-fr" src="image/france.svg" alt="Français">
+						<img class="icon-en" src="image/anglais.svg" alt="Anglais">
+					</button>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<section id="presentation">
+			<!--partie visible sur tout l'écran quand on clique sur le site-->
+			<div class="split container">
+				<div class="im_text">
+					<div class="titre">
+						Brenelière Samantha
+					</div>
+					<div class="texte_pres" id="machine" data-i18n-tw="hero-tagline">
+						Je suis élève ingénieure, en informatique
+					</div>
+				</div>
+				<div class="im_pres">
+					<div class="photo-circles">
+						<div class="circle circle-1"></div>
+						<div class="circle circle-2"></div>
+						<div class="circle circle-3"></div>
+						<div class="circle circle-4"></div>
+						<img src="image/pp.jpg" alt="Photo de présentation" class="taille_im">
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="photo-circles2">
+			<div class="circle circle-1"></div>
+			<div class="circle circle-2"></div>
+			<div class="circle circle-3"></div>
+			<div class="circle circle-4"></div>
+		</div>
+		<section id="experiences">
+			<div class="container fond">
+				<div class="container_top">
+					<div class="texte-important2" style="z-index: 3;" data-i18n="exp-title">
+						Stages / Expériences
+					</div>
+					<div class="chrono-timeline-wrapper">
+						<div class="chrono-timeline-line"></div>
+
+						<div class="chrono-timeline-event">
+							<div class="chrono-timeline-card chrono-timeline-card-top">
+								<h3 data-i18n="exp1-h3">Conseillère à la vente - Easy cash - Quévert, France</h3>
+								<p class="date" data-i18n="exp1-date">Juin 2024</p>
+								<div class="chrono-timeline-details">
+									<p data-i18n="exp1-d1">Sens du contact et de l’écoute active ;</p>
+									<p data-i18n="exp1-d2">Collaboration / travail avec l’équipe ;</p>	
+									<p data-i18n="exp1-d3">Reformatage des ordinateurs avant la remise en vente.</p>
+								</div>
+							</div>
+							<div class="chrono-timeline-dot"></div>
+						</div>
+
+						<div class="chrono-timeline-event">
+							<div class="chrono-timeline-dot"></div>
+							<div class="chrono-timeline-card chrono-timeline-card-bottom">
+								<h3 data-i18n="exp2-h3">Gérante de snack - Beauséjour - Saint Samson/Rance, France</h3>
+								<p class="date" data-i18n="exp2-date">Juillet - Aout 2025</p>
+								<div class="chrono-timeline-details">
+									<p data-i18n="snack-d1">Utilisation de logiciels de caisse, clôture de caisse, gestion des espèces ;</p>
+									<p data-i18n="snack-d2">Polyvalence / Capacité à gérer plusieurs tâches en même temps ;</p>	
+									<p data-i18n="snack-d3">Gérer les périodes de forte affluence avec efficacité et sang-froid ;</p>
+									<p data-i18n="snack-d4">Réactivité, autonomie et sens du service.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="chrono-timeline-event">
+							<div class="chrono-timeline-card chrono-timeline-card-top">
+								<h3 data-i18n="exp3-h3">Stage en réseau et télécommunication - SNCF Réseau - Rennes, France</h3>
+								<p class="date" data-i18n="exp3-date">Juin 2026</p>
+								<div class="chrono-timeline-details">
+									<p data-i18n="exp3-d1">Surveiller et maintenir les systèmes d’exploitation des serveurs du périmètre régional ;</p>
+									<p data-i18n="exp3-d2">Surveiller et maintenir des systèmes d’exploitation et intervenir sur des incidents utilisateurs ;</p>	
+									<p data-i18n="exp3-d3">Surveiller et maintenir les équipements réseau ;</p>
+									<p data-i18n="exp3-d4">Configurer des commutateurs en appliquant les directives et les règles de sécurité ;</p>
+									<p data-i18n="exp3-d5">Concevoir une infrastructure réseau (étude de régénération de matériel LAN) ;</p>
+									<p data-i18n="exp3-d6">Analyser le trafic réseau (Wireshark) pour détecter des anomalies sur les LAN régionaux.</p>
+								</div>
+							</div>
+							<div class="chrono-timeline-dot"></div>
+						</div>
+
+						<div class="chrono-timeline-event">
+							<div class="chrono-timeline-dot"></div>
+							<div class="chrono-timeline-card chrono-timeline-card-bottom">
+								<h3 data-i18n="exp2-h3">Gérante de snack - Beauséjour - Saint Samson/Rance, France</h3>
+								<p class="date" data-i18n="exp4-date">Juillet - Aout 2026</p>
+								<div class="chrono-timeline-details">
+									<p data-i18n="snack-d1">Utilisation de logiciels de caisse, clôture de caisse, gestion des espèces ;</p>
+									<p data-i18n="snack-d2">Polyvalence / Capacité à gérer plusieurs tâches en même temps ;</p>	
+									<p data-i18n="snack-d3">Gérer les périodes de forte affluence avec efficacité et sang-froid ;</p>
+									<p data-i18n="snack-d4">Réactivité, autonomie et sens du service.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="diplomes">
+			<div class="container fond2">
+				<div class="container_top">
+					<div class="texte-important2" data-i18n="dip-title">
+						Cursus / diplômes :
+					</div>
+					<ul class="diploma-list">
+						<li class="diploma-card">
+							<h3 data-i18n="dip1-h3">Brevet</h3>
+							<p class="date">2018 - 2019</p>
+
+							<div class="diploma-details">
+								<p data-i18n="dip1-d1">Mention : Très bien</p>
+								<p data-i18n="dip1-d2">Lieu : Collège Val de Rance à Plouer sur Rance</p>
+							</div>
+						</li>
+
+						<li class="diploma-card">
+							<h3 data-i18n="dip2-h3">Bac spécialité mathématiques et physiques</h3>
+							<p class="date">2021 - 2022</p>
+
+							<div class="diploma-details">
+								<p data-i18n="dip2-d1">Mention : Assez bien</p>
+								<p data-i18n="dip2-d2">Lieu : Lycée la Fontaine des eaux à Dinan</p>
+							</div>
+						</li>
+
+						<li class="diploma-card">
+							<h3 data-i18n="dip3-h3">1ère année de licence de mathématiques</h3>
+							<p class="date">2022 - 2023</p>
+
+							<div class="diploma-details">
+								<p data-i18n="dip3-d1">Lieu : Université de Rennes 1</p>
+							</div>
+						</li>
+
+						<li class="diploma-card">
+							<h3 data-i18n="dip4-h3">Cycle universitaire préparatoire aux grandes écoles</h3>
+							<p class="date">2023 - 2025</p>
+
+							<div class="diploma-details">
+								<p data-i18n="dip4-d1">Lieu : ESIR à l'université de Rennes</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="competences">
+			<div class="container fond3">
+				<div class="container_top">
+					<div class="texte-important2" data-i18n="skills-title">
+						Langages & outils
+					</div>
+
+					<div class="skills-terminal">
+						<div class="skills-terminal-header">
+							<span class="skills-dot skills-dot-red"></span>
+							<span class="skills-dot skills-dot-yellow"></span>
+							<span class="skills-dot skills-dot-green"></span>
+							<span class="skills-terminal-title">competences.sh</span>
+						</div>
+						<div class="skills-terminal-body">
+							<p class="skills-cmd" data-i18n="skills-cmd1">cat maitrise.txt</p>
+							<div class="skills-grid">
+								<span class="skill-chip skill-mastered">HTML</span>
+								<span class="skill-chip skill-mastered">CSS</span>
+								<span class="skill-chip skill-mastered">PHP</span>
+								<span class="skill-chip skill-mastered">SQL</span>
+								<span class="skill-chip skill-mastered">Python</span>
+								<span class="skill-chip skill-mastered">Java</span>
+								<span class="skill-chip skill-mastered">C++</span>
+								<span class="skill-chip skill-mastered">Bash</span>
+								<span class="skill-chip skill-mastered">SQL</span>
+							</div>
+
+							<p class="skills-cmd" data-i18n="skills-cmd2">cat en_apprentissage.txt</p>
+							<div class="skills-grid">
+								<span class="skill-chip skill-learning" data-i18n="skill-asm">Assembleur</span>
+								<span class="skill-chip skill-learning" data-i18n="skill-3d">3D Expérience</span>
+								<span class="skill-chip skill-learning">JavaScript</span>
+								<span class="skill-chip skill-learning">C</span>
+							</div>
+
+							<p class="skills-cmd skills-cmd-cursor"><span class="skills-cursor"></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+    </main>
+
+    <footer>
+		<div class="footer-left">
+			<h3>Samantha Brenelière</h3>
+			<p data-i18n="footer-role">Étudiante en informatique</p>
+		</div>
+
+		<div class="footer-center">
+			<p>✉ samantha.breneliere@proton.me</p>
+		</div>
+
+		<div class="footer-right">
+			<p>© 2026</p>
+		</div>
+	</footer>
+
+	<script src="JavaScript/script.js"></script>
+</body >
+</html>
